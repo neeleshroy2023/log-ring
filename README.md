@@ -13,7 +13,7 @@ A simple ring buffer logging utility for Node.js and TypeScript that maintains a
 - 🎯 **TypeScript Support**: Full TypeScript support with type definitions
 - 🔍 **Filtering**: Get logs by specific level
 - ⏰ **Timestamps**: Automatic timestamping of all log entries
-- 🚀 **Zero Dependencies**: Lightweight with no external dependencies
+- 🚀 **Zero Dependencies**: Lightweight with no external dependencies.
 
 ## Installation
 
@@ -30,44 +30,44 @@ pnpm add log-ring
 ### Basic Usage
 
 ```typescript
-import LogRing from 'log-ring';
+import LogRing from "log-ring";
 
 const logger = new LogRing(50); // Keep last 50 log entries
 
-logger.info('Application started');
-logger.warn('This is a warning');
-logger.error('Something went wrong');
+logger.info("Application started");
+logger.warn("This is a warning");
+logger.error("Something went wrong");
 
 // Get all logs
 const allLogs = logger.getLogs();
 console.log(allLogs);
 
 // Get logs by level
-const errorLogs = logger.getLogsByLevel('error');
+const errorLogs = logger.getLogsByLevel("error");
 console.log(errorLogs);
 ```
 
 ### Factory Function
 
 ```typescript
-import { createLogRing } from 'log-ring';
+import { createLogRing } from "log-ring";
 
 const logger = createLogRing(100);
-logger.debug('Debug message');
+logger.debug("Debug message");
 ```
 
 ### Available Methods
 
 ```typescript
 // Logging methods
-logger.debug('Debug message');
-logger.info('Info message');
-logger.warn('Warning message');
-logger.error('Error message');
+logger.debug("Debug message");
+logger.info("Info message");
+logger.warn("Warning message");
+logger.error("Error message");
 
 // Utility methods
 logger.getLogs(); // Get all logs
-logger.getLogsByLevel('info'); // Get logs by specific level
+logger.getLogsByLevel("info"); // Get logs by specific level
 logger.clear(); // Clear all logs
 logger.getSize(); // Get current number of logs
 logger.getMaxSize(); // Get maximum buffer size
@@ -90,7 +90,7 @@ new LogRing(maxSize?: number)
 ##### Logging Methods
 
 - `debug(message: string): void` - Add a debug log entry
-- `info(message: string): void` - Add an info log entry  
+- `info(message: string): void` - Add an info log entry
 - `warn(message: string): void` - Add a warning log entry
 - `error(message: string): void` - Add an error log entry
 
@@ -105,7 +105,7 @@ new LogRing(maxSize?: number)
 ### Types
 
 ```typescript
-type LogLevelType = 'debug' | 'info' | 'warn' | 'error';
+type LogLevelType = "debug" | "info" | "warn" | "error";
 
 interface LogEntry {
   level: LogLevelType;
@@ -140,6 +140,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-
-
