@@ -1,6 +1,6 @@
 # Log Ring
 
-[![npm version](https://badge.fury.io/js/log-ring.svg)](https://www.npmjs.com/package/@holotrace/log-ring)
+[![npm version](https://img.shields.io/npm/v/%40holotrace%2Flog-ring)](https://www.npmjs.com/package/@holotrace/log-ring)
 [![GitHub license](https://img.shields.io/github/license/neeleshroy2023/log-ring.svg)](https://github.com/username/log-ring/blob/main/LICENSE)
 [![GitHub actions](https://github.com/neeleshroy2023/log-ring/actions/workflows/release.yml/badge.svg)](https://github.com/username/log-ring/actions/workflows/release.yml)
 
