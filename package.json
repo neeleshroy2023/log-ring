@@ -1,6 +1,6 @@
 {
   "name": "@holotrace/log-ring",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A simple ring buffer logging utility for Node.js and TypeScript",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
